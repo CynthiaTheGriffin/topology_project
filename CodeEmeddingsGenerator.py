@@ -98,7 +98,7 @@ def embed_all_files(files:dict) -> None:
             json.dump(results, open(f'data/embed_{id}.json', 'w')) # Save as json
         except Exception:
             print(f'Something has gone wrong with file {id}: {url}')
-            print_exception()
+            print_exc()
     return
 
 
